@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Like a Pro - Canva Mastery Course</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .flyer {
+            background: white;
+            max-width: 400px;
+            width: 100%;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            position: relative;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #00D4FF 0%, #090979 100%);
+            color: white;
+            padding: 30px 25px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .header::before {
+            content: "";
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            animation: pulse 3s ease-in-out infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); opacity: 0.3; }
+            50% { transform: scale(1.1); opacity: 0.1; }
+        }
+        
+        .badge {
+            background: #FF6B6B;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 15px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .main-headline {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .sub-headline {
+            font-size: 14px;
+            opacity: 0.9;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .content {
+            padding: 25px;
+        }
+        
+        .problem {
+            background: #FFF3E0;
+            border-left: 4px solid #FF9800;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        
+        .problem h3 {
+            color: #E65100;
+            margin-bottom: 8px;
+            font-size: 16px;
+        }
+        
+        .problem p {
+            font-size: 14px;
+            color: #555;
+        }
+        
+        .solution {
+            margin-bottom: 20px;
+        }
+        
+        .solution h3 {
+            color: #2E7D32;
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+        
+        .benefits {
+            list-style: none;
+            margin-bottom: 20px;
+        }
+        
+        .benefits li {
+            padding: 8px 0;
+            font-size: 14px;
+            position: relative;
+            padding-left: 25px;
+        }
+        
+        .benefits li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #4CAF50;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        
+        .bonus {
+            background: linear-gradient(135deg, #FFE082 0%, #FFB300 100%);
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .bonus h4 {
+            color: #E65100;
+            margin-bottom: 8px;
+            font-size: 16px;
+        }
+        
+        .bonus p {
+            font-size: 14px;
+            color: #333;
+        }
+        
+        .pricing {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .original-price {
+            text-decoration: line-through;
+            color: #999;
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+        
+        .current-price {
+            font-size: 32px;
+            font-weight: bold;
+            color: #E91E63;
+            margin-bottom: 10px;
+        }
+        
+        .limited-time {
+            background: #FF1744;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 15px;
+            animation: blink 2s infinite;
+        }
+        
+        @keyframes blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0.7; }
+        }
+        
+        .cta-button {
+            background: linear-gradient(135d
